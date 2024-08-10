@@ -1,0 +1,117 @@
+nav {
+    display: flex;
+}
+body {
+    /* font-family: "Work Sans",Arial,sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-weight: 300; */
+   
+    /* font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
+}
+nav img{
+    width: 200px;
+    margin-left: 100px;
+}
+nav ul{
+    display: flex;
+    margin-left: 400px;
+    
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+margin: 20px;
+}
+nav ul li a:hover{
+    color:palevioletred;
+}
+.para1{
+    display: block;
+    text-align: center;
+    margin-left:300px;
+    margin-right: 300px;
+
+}
+.para1 h1{
+     font-family: "Pinyon Script", cursive;
+    font-size: 70px;
+    font-style: normal; 
+    font-weight: 900;
+
+}
+.para1 p{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Pinyon Script", cursive;
+    border-radius: 50px;
+   color: palevioletred;
+    border-style:outset;
+}
+/* .sect1{
+    border-style: double;
+    border-radius: 20px;
+    border-top-color: rgb(148, 124, 135);
+} */
+.art{
+    display: flex;
+    justify-items: center;
+
+}
+.art img{
+    margin: 15px;
+}
+.art1{
+    display: flex;
+}
+
+.art1 {
+    
+    justify-content: center;
+}
+.art1 img{
+   margin: 20px;
+
+   
+   
+}
+footer{
+   background-color:#d8abab;
+}
+.foot1{
+    display: flex;
+   
+    
+}
+footer div{
+    margin: 15px;
+}
+footer .foot1 div ul li{
+    list-style: none;
+
+}
+footer .foot1 div h4 a {
+    text-decoration: none;
+    color: black;
+}
+footer .foot1 div ul li a{
+    text-decoration: none;
+    color: black;
+}
+.foot2{
+    display: flex;
+}
+.foot2 a img{
+    margin-left:800px
+}
+.tiktok a:hover{
+    color: palevioletred
+
+}
