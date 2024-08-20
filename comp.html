@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="projet.css">
     <link rel="stylesheet" href="box.css">
+    <link rel="stylesheet" href="bouton.css">
+    <script src="projet.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,6 +21,7 @@
                 <li><a href="accessoires.html">Accesssoires</a></li>
                 <li><a href="ensemble.html">Tenue de Priére</a></li>
                 <li><a href="box.html">Lamis Box</a></li>
+                <li><a href="#"><button style="background-color: palevioletred; border-radius: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button></a></li>
             </ul>
            
                 
@@ -28,25 +31,37 @@
     <main>
         <h1 style="text-align: center;">Lamis box Blanche à composer</h1>
         <div style="display: flex;">
-        <div>
+        <!-- <div>
             <img src="https://lamis-boutique.fr/img/cms/lamis-box-blanche-XS-2.jpg" alt="" width="200px">
             <div class="box1">
                 <h1>P'titTrésor</h1>
                 <p>Box X-Small
                     Une charmante petite box de 10x10 cm, spécialement conçue pour contenir une merveilleuse sélection d'accessoires hijab et de petites surprises. Des épingles, des attaches hijab, des muscs, et bien plus.
-                    Budget : 15-20€</p>
+                    Budget : <br><span>15-20€</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input type="number" min="0">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
-        </div>
+        </div> -->
 
-        <div>
+        <!-- <div>
             <img src="https://lamis-boutique.fr/img/cms/lamis-box-blanche-S-2.jpg" alt="" width="200px">
             <div class="box1">
                 <h1>MimiBoxie</h1>
                 <p>Box Small
                     un petit trésor compact et raffiné de 16X16 cm, conçu pour contenir un hijab / des sous-hijabs / des manchettes / turbans / des faux cols ou des chouchous. Une box à petit budget pour un grand plaisir
-                    Budget : 20-30€</p>
+                    Budget : <br><span>20-30€</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input type="number" min="0">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
-        </div>
+        </div> -->
 
         <div>
             <img src="https://lamis-boutique.fr/img/cms/lamis-box-blanche-M-2.jpg" alt="" width="200px">
@@ -54,9 +69,16 @@
                 <h1>P'titePépite</h1>
                 <p>Box Medium
                     La box préférée de nos clientes, notre trésor de 10x15 cm, spécialement conçue pour accueillir un lot de 3 hijabs choisis parmi une large collection de hijabs tendances plus un kit d'accessoires.
-                    Budget : 30-40€</p>
+                    Budget : <br> <span id="prix-unitaire34">30-40€</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity34" type="number" min="0">
+                        <button id="aime34"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier34"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
         </div>
+        
 
         <div>
             <img src="https://lamis-boutique.fr/img/cms/lamis-box-blanche-L-2.jpg" alt="" width="200px">
@@ -64,7 +86,13 @@
                 <h1>Coffret Plaisir</h1>
                 <p>Box X-Large
                     une boîte généreuse de 28x28 cm conçue pour ravir vos proches. Elle peut contenir une combinaison soigneusement choisie de hijabs, de sous-hijabs et d'accessoires, créant ainsi un cadeau plein de charme.
-                    Budget : 50-70€</p>
+                    Budget : <br> <span id="prix-unitaire35">50-70€</span> </p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity35"type="number" min="0">
+                        <button  id="aime35"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier35"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
         </div>
 
@@ -74,7 +102,13 @@
                 <h1>SuperBox</h1>
                 <p>Box X-X-Large
                     Coffret Généreux de 35x28 cm, offert par une âme bienveillante qui cherche à combler de bonheur. Elle peut contenir toute la collection du site, vous offrant ainsi un éventail infini d'articles pour faire plaisir à une proche.
-                    Budget : 80-150€</p>
+                    Budget :  <br><span id="prix-unitaire36">80-150€</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity36" type="number" min="0">
+                        <button  id="aime36"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier36"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
         </div>
 

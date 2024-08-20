@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="projet.css">
     <link rel="stylesheet" href="box.css">
+    <link rel="stylesheet" href="bouton.css">
+    <script src="projet.js" defer></script>
 </head>
 <body>
 
@@ -21,6 +23,7 @@
                     <li><a href="accessoires.html">Accesssoires</a></li>
                     <li><a href="ensemble.html">Tenue de Priére</a></li>
                     <li><a href="box.html">Lamis Box</a></li>
+                    <li><a href="#"><button style="background-color: palevioletred; border-radius: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button></a></li>
                 </ul>
                
                     
@@ -35,11 +38,17 @@
                     <div style="display: block;justify-content: center;margin: 25px;">
 
                         <h1 style="text-align: center;">E-carte cadeau Lamis Hijab <br>
-                            25,00 €
+                            <span id="prix-unitaire37">25,00 €</span>
                             </h1>
                             <p>Vous êtes à la recherche d'un cadeau de dernière minute ? ou vous voulez offrir un cadeau à une personne chère à vos yeux mais vous ne connaissez pas ces goûts ou ce qui peut lui faire plaisir ? la e-carte cadeau Lamis Hijab est la solution pour vous.
     
                                 Vous pouvez la personnaliser avec votre prénom, le prénom de la personne et un message personnelle qui sublimera votre e-carte et qui lui donnera du sens. </p>
+                                <div class="nombre">
+                                    <p>QUANTITE </p>
+                                    <input id="quantity37" type="number" min="0">
+                                    <button id="aime37"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                                    <button id="ajout-panier37"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                                </div>
 
                     </div>
                     

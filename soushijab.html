@@ -6,9 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="projet.css">
     <link rel="stylesheet" href="box.css">
+    <link rel="stylesheet" href="bouton.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+<script src="projet.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,6 +24,7 @@
                 <li><a href="accessoires.html">Accesssoires</a></li>
                 <li><a href="ensemble.html">Tenue de Priére</a></li>
                 <li><a href="box.html">Lamis Box</a></li>
+                <li><a href="#"><button style="background-color: palevioletred; border-radius: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button></a></li>
             </ul>
            
                 
@@ -34,58 +37,92 @@
             <h1>Sous hijab | cagoule | Bonnet croisé | Bonnet Fermé ou à nouer pour maintenir les voiles</h1>
             <p>Lamis Hijab vous propose une large collection de sous-hijab avec différents choix de modèle et de tissus. Nos sous-hijabs sont élastiques et adaptés à toutes les saisons et pour tous types de peau. Nous disposons d’un large panel de couleur, qui vous raviront toutes !</p>
         </div>
-        <div style="display: flex;">
-            <img src="https://lamis-boutique.fr/11324-large_default/sous-hijab-ferme-a-nouer-lamishijab-creation.jpg" alt="" width="400px">
-            <div class="sous">
-                <h1>Sous hijab fermé à nouer LAMISHIJAB® CRÉATION</h1>
-                <p>5,99 €</p>
-            </div>
-        </div>
-
-        <div style="display: flex;">
-            <img src="https://lamis-boutique.fr/10742-home_default/cagoule-en-maille-.jpg" alt="" width="400px">
-            <div class="sous">
-                <h1>Cagoule en Maille</h1>
-                <p>8,99 €</p>
-            </div>
-        </div>
-
-        <div style="display: flex;">
-            <img src="https://lamis-boutique.fr/6342-home_default/bonnet-sous-hijab-a-nouer-noir.jpg" alt="" width="400px">
-            <div class="sous">
-                <h1>Bonnet à nouer</h1>
-                <p>2,99 €</p>
-            </div>
-        </div>
-
-        <div style="display: flex;">
-            <img src="https://lamis-boutique.fr/10260-home_default/sous-hijab-2-en-1-croise-tube-noir.jpg" alt="" width="400px">
-            <div class="sous">
-                <h1>Sous hijab 2 en 1</h1>
-                <p>4,99 €</p>
-            </div>
-        </div>
-
-        <div style="display: flex;">
-            <img src="https://lamis-boutique.fr/8922-large_default/sous-hijab-cotele-2-en-1-.jpg" alt="" width="400px">
-            <div class="sous">
-                <h1>Sous hijab côtelé 2 en 1 LAMISHIJAB® CRÉATION
-                    </h1>
-                <p>5,99 €</p>
+        <div  class="tenue" >
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/11324-large_default/sous-hijab-ferme-a-nouer-lamishijab-creation.jpg" alt="" width="400px" style="border-radius: 20px;">
+                <p class="box1">Sous hijab fermé à nouer LAMISHIJAB® CRÉATION <br><span id="prix-unitaire7">5,99 €</span></p>
+                <div class="nombre">
+                    <p>QUANTITE </p>
+                    <input id="quantity7" type="number" min="0">
+                    <button id="aime7"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                    <button id="ajout-panier7"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                </div>
                 
             </div>
-        </div>
-
-        <div style="display: flex;">
-            <img src="https://lamis-boutique.fr/102-home_default/sous-hijab-cagoule.jpg" alt="" width="400px">
-            <div class="sous">
-                <h1>Sous hijab cagoule
-                    </h1>
-                <p>3,99 €</p>
+    
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/10742-home_default/cagoule-en-maille-.jpg" alt="" width="400px" style="border-radius: 20px;">
+                <p class="box1">Cagoule en Maille <br><span id="prix-unitaire8">8,99 €</span></p>
+                <div class="nombre">
+                    <p>QUANTITE </p>
+                    <input id="quantity8" type="number" min="0">
+                    <button id="aime8"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                    <button id="ajout-panier8"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                </div>
+                
             </div>
+    
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/6342-home_default/bonnet-sous-hijab-a-nouer-noir.jpg" alt="" width="400px" style="border-radius: 20px;">
+                <p class="box1">Bonnet à nouer <br><span id="prix-unitaire9">2,99 €</span></p>
+                <div class="nombre">
+                    <p>QUANTITE </p>
+                    <input  id="quantity9"type="number" min="0">
+                    <button id="aime9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                    <button id="ajout-panier9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                </div>
+                
+            </div>
+
         </div>
 
+        <div  class="tenue">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/10260-home_default/sous-hijab-2-en-1-croise-tube-noir.jpg" alt="" width="400px" style="border-radius: 20px;">
+                <p class="box1">Sous hijab 2 en 1 <br><span id="prix-unitaire10">4,99 €</span></p>
+                <div class="nombre">
+                    <p>QUANTITE </p>
+                    <input   id="quantity10" type="number" min="0">
+                    <button id="aime10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                    <button id="ajout-panier10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                </div>
+                
+            </div>
+    
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/8922-large_default/sous-hijab-cotele-2-en-1-.jpg" alt="" width="400px" style="border-radius: 20px;">
+                 <p class="box1">Sous hijab côtelé 2 en 1 LAMISHIJAB® CRÉATION <br><span id="prix-unitaire11">5,99 €</span></p>
+                 <div class="nombre">
+                    <p>QUANTITE </p>
+                    <input  id="quantity11" type="number" min="0">
+                    <buttonbutton id="aime11"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                    <button id="ajout-panier11"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                </div>
+                    
+                
+            </div>
+    
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/102-home_default/sous-hijab-cagoule.jpg" alt="" width="400px" style="border-radius: 20px;">
+                <p class="box1">Sous hijab cagoule <br><span id="prix-unitaire12">3,99 €</span></p>
+                <div class="nombre">
+                    <p>QUANTITE </p>
+                    <input id="quantity12" type="number" min="0">
+                    <button id="aime12"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                    <button id="ajout-panier12"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                </div>
+                
+            </div>
 
+
+        </div>
+       
+
+        
+
+   
+
+    
 
 
 

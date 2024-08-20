@@ -6,9 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="projet.css">
     <link rel="stylesheet" href="box.css">
+    <link rel="stylesheet" href="bouton.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+<script src="projet.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,6 +24,7 @@
                 <li><a href="accessoires.html">Accesssoires</a></li>
                 <li><a href="ensemble.html">Tenue de Priére</a></li>
                 <li><a href="box.html">Lamis Box</a></li>
+                <li><a href="#"><button style="background-color: palevioletred; border-radius: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button></a></li>
             </ul>
            
                 
@@ -34,58 +37,67 @@
             <p>Notre collection de turban est entièrement cousu vous n’avez qu’à l’enfiler pas besoin d'épingles pour les faire maintenir. Nos turbans sont destinées aux femmes voilées  ou pas ils sont également adaptés à toutes autres situations médicales.
 
                 🥳 Offre Spéciale 🥳 
-                Achetez 3 Turbans et obtenez le 4ème OFFERT ! Profitez d'une réduction automatique de 12,99 euro appliquée directement dans votre panier. Cette promotion s'applique à tous les Turbans, vous offrant la flexibilité de mélanger les modèles et les matières tout en bénéficiant de la remise.
+                Achetez 3 Turbans et obtenez le 4ème OFFERT ! Profitez d'une réduction automatique de <span>12,99 euro</span> appliquée directement dans votre panier. Cette promotion s'applique à tous les Turbans, vous offrant la flexibilité de mélanger les modèles et les matières tout en bénéficiant de la remise.
                 
                 Il faut ajouter 4 Turbans dans votre panier pour bénéficier de l'offre </p>
         </div>
-        <div style="display: flex;">
-            <img src="https://lamis-boutique.fr/8961-home_default/turban-a-enfiler-cotele-en-jersey-premium.jpg" alt="">
-            <div>
-                <h1>Turban à enfiler côtelé en jersey premium LAMISHIJAB® CRÉATION</h1>
-                <p>12,99 €</p>
-                <p>
-             🥳 Offre Spéciale 🥳 Achetez 3 Turbans et obtenez le 4ème OFFERT ! Profitez d'une réduction automatique de 12,99 euro appliquée directement dans votre panier. Cette promotion s'applique à tous les Turbans, vous offrant la flexibilité de mélanger les modèles et les matières tout en bénéficiant de la remise.
-                    
-                    Il faut ajouter 4 Turbans dans votre panier pour bénéficier de l'offre </p>
-
+        <div class="tenue">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/8961-home_default/turban-a-enfiler-cotele-en-jersey-premium.jpg" alt="" width="350" style="border-radius: 20px;">
+                <div>
+                    <h1>Turban à enfiler côtelé en jersey premium LAMISHIJAB® CRÉATION</h1>
+                    <p>12,99 €</p>
+                    <p>
+                 🥳 Offre Spéciale 🥳 Achetez 3 Turbans et obtenez le 4ème OFFERT ! Profitez d'une réduction automatique de <span id="prix-unitaire13">12,99 euro</span> appliquée directement dans votre panier. Cette promotion s'applique à tous les Turbans, vous offrant la flexibilité de mélanger les modèles et les matières tout en bénéficiant de la remise.
+                        
+                        Il faut ajouter 4 Turbans dans votre panier pour bénéficier de l'offre </p>
+                        <div class="nombre">
+                            <p>QUANTITE </p>
+                            <input id="quantity13" type="number" min="0">
+                            <button id="aime13"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                            <button id="ajout-panier13"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                        </div>
+    
+                </div>
             </div>
-        </div>
-
-        <div style="display: flex;">
-            <img src="https://lamis-boutique.fr/8095-home_default/turban-a-enfiler-en-daim.jpg" alt="">
-            <div>
-                <h1>Turban à enfiler en Daim</h1>
-                <p>12,99 €</p>
-                <p>🥳 Offre Spéciale 🥳 Achetez 3 Turbans et obtenez le 4ème OFFERT ! Profitez d'une réduction automatique de 12,99 euro appliquée directement dans votre panier. Cette promotion s'applique à tous les Turbans, vous offrant la flexibilité de mélanger les modèles et les matières tout en bénéficiant de la remise.
-                    Il faut ajouter 4 Turbans dans votre panier pour bénéficier de l'offre 
-                    Afin de donner un beau volume au turban nous avons utilisé un chouchou volumateur par dessous.
-                </p>
-
+    
+            <div style="display:block;">
+                <img src="https://lamis-boutique.fr/8095-home_default/turban-a-enfiler-en-daim.jpg" alt="" width="350"  style="border-radius: 20px;">
+                <div>
+                    <h1>Turban à enfiler en Daim</h1>
+                    <p>12,99 €</p>
+                    <p>🥳 Offre Spéciale 🥳 Achetez 3 Turbans et obtenez le 4ème OFFERT ! Profitez d'une réduction automatique de <span id="prix-unitaire14">12,99 euro</span> appliquée directement dans votre panier. Cette promotion s'applique à tous les Turbans, vous offrant la flexibilité de mélanger les modèles et les matières tout en bénéficiant de la remise.
+                        Il faut ajouter 4 Turbans dans votre panier pour bénéficier de l'offre 
+                        Afin de donner un beau volume au turban nous avons utilisé un chouchou volumateur par dessous.
+                    </p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity14" type="number" min="0">
+                        <button id="aime14"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier14"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
+    
+                </div>
             </div>
-        </div>
-
-        <div style="display: flex;">
-            <img src="https://lamis-boutique.fr/6063-home_default/turban-a-enfiler-en-maille.jpg" alt="">
-            <div>
-                <h1>Turban à enfiler en Maille</h1>
-                <p>12,99 €</p>
-                <p>🥳 Offre Spéciale 🥳 Achetez 3 Turbans et obtenez le 4ème OFFERT ! Profitez d'une réduction automatique de 12,99 euro appliquée directement dans votre panier. Cette promotion s'applique à tous les Turbans, vous offrant la flexibilité de mélanger les modèles et les matières tout en bénéficiant de la remise.
-                    Il faut ajouter 4 Turbans dans votre panier pour bénéficier de l'offre </p>
+    
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/6063-home_default/turban-a-enfiler-en-maille.jpg" alt="" width="350"  style="border-radius: 20px;">
+                <div>
+                    <h1>Turban à enfiler en Maille</h1>
+                    <p>12,99 €</p>
+                    <p>🥳 Offre Spéciale 🥳 Achetez 3 Turbans et obtenez le 4ème OFFERT ! Profitez d'une réduction automatique de <span id="prix-unitaire15">12,99 euro</span> appliquée directement dans votre panier. Cette promotion s'applique à tous les Turbans, vous offrant la flexibilité de mélanger les modèles et les matières tout en bénéficiant de la remise.
+                        Il faut ajouter 4 Turbans dans votre panier pour bénéficier de l'offre </p>
+                        <div class="nombre">
+                            <p>QUANTITE </p>
+                            <input  id="quantity15"type="number" min="0">
+                            <button  id="aime15"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                            <button id="ajout-panier15"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                        </div>
+                </div>
             </div>
+    
         </div>
-
-        <div style="display: flex;">
-            <img src="https://lamis-boutique.fr/10689-home_default/turban-a-enfiler-croise-beige.jpg" alt="">
-            <div>
-                <h1>Turban à enfiler croisé</h1>
-                <p>12,99 €</p>
-                <p>🥳 Offre Spéciale 🥳 Achetez 3 Turbans et obtenez le 4ème OFFERT ! Profitez d'une réduction automatique de 12,99 euro appliquée directement dans votre panier. Cette promotion s'applique à tous les Turbans, vous offrant la flexibilité de mélanger les modèles et les matières tout en bénéficiant de la remise.
-
-
-                    Il faut ajouter 4 Turbans dans votre panier pour bénéficier de l'offre </p>
-
-            </div>
-        </div>
+       
     </main>
 
 

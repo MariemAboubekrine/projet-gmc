@@ -6,9 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="projet.css">
     <link rel="stylesheet" href="box.css">
+    <link rel="stylesheet" href="bouton.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+<script src="projet.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,6 +24,7 @@
                 <li><a href="accessoires.html">Accesssoires</a></li>
                 <li><a href="ensemble.html">Tenue de Priére</a></li>
                 <li><a href="box.html">Lamis Box</a></li>
+                <li><a href="#"><button style="background-color: palevioletred; border-radius: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button></a></li>
             </ul>
            
                 
@@ -38,74 +41,110 @@
             <p>Lamis Hijab vous propose une large collection de hijab avec différents choix de modèle et de tissus. Nos hijabs sont adaptés à toutes les saisons et pour tous types de peau. Nous disposons d’un large panel de couleur, qui vous raviront toutes !</p>
         </div>
         <div class="tenue">
-            <div>
-                <img src="https://lamis-boutique.fr/9070-large_default/hijab-a-enfiler-sans-epingles-2-voiles.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/9070-large_default/hijab-a-enfiler-sans-epingles-2-voiles.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">hijab à enfiler sans épingles 2 voiles
-                    Prix14,99 €</p>
+                    Prix <span id="prix-unitaire" >14,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity" type="number" min="0">
+                        <button id="aime"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
-            <div>
-                <img src="https://lamis-boutique.fr/8451-home_default/hijab-crepe-plisse.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/8451-home_default/hijab-crepe-plisse.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Hijab crêpe plissé
-                    Prix13,99 €</p>
+                    Prix <span id="prix-unitaire2">13,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity2" type="number" min="0">
+                        <button id="aime2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
-            <div>
-                <img src="https://lamis-boutique.fr/7369-home_default/khimar-a-enfiler-cape-jilbab.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/7369-home_default/khimar-a-enfiler-cape-jilbab.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Khimar à enfiler - Cape Jilbab
-                    Prix habituel19,99 € Prix15,99 €</p>
+                    Prix habituel 19,99€ Prix<span id="prix-unitaire3">15,99 €</span> </p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity3" type="number" min="0">
+                        <button id="aime3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier3" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
         </div>
-
+<!-- 
         <div class="tenue">
-            <div>
-                <img src="https://lamis-boutique.fr/6238-home_default/hijab-pashmina-turque.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/6238-home_default/hijab-pashmina-turque.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Hijab pashmina turque opaque
                     Prix8,99 €</p>
             </div>
-            <div>
-                <img src="https://lamis-boutique.fr/8788-home_default/hijab-a-enfiler-a-nouer-avec-ouvertures-lunettes.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/8788-home_default/hijab-a-enfiler-a-nouer-avec-ouvertures-lunettes.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Hijab à enfiler à nouer avec ouvertures lunettes
                     Prix habituel16,99 € Prix14,44 €</p>
             </div>
-            <div>
-                <img src="https://lamis-boutique.fr/10987-home_default/hijab-jersey-bambou-lamishijab-creation-.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/10987-home_default/hijab-jersey-bambou-lamishijab-creation-.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Maxi Hijab jersey bambou LAMISHIJAB® Création
                     Prix16,99 €</p>
             </div>
         </div>
 
         <div class="tenue">
-            <div>
-                <img src="https://lamis-boutique.fr/6181-home_default/hijab-a-enfiler-avec-bonnet-integre.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/6181-home_default/hijab-a-enfiler-avec-bonnet-integre.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">HIJAB À ENFILER CROISÉ MOUSSELINE
                     Prix12,99 €</p>
             </div>
-            <div>
-                <img src="https://lamis-boutique.fr/6761-large_default/kit-hijab-jersey-premium.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/6761-large_default/kit-hijab-jersey-premium.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Kit Hijab Jersey PREMIUM couleurs aux choix + Kit...
                     Prix habituel55,99 € Prix49,99 €</p>
             </div>
-            <div>
-                <img src="https://lamis-boutique.fr/6113-large_default/hijab-a-enfiler-avec-bonnet-integre-en-mousseline.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/6113-large_default/hijab-a-enfiler-avec-bonnet-integre-en-mousseline.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Hijab à enfiler avec bonnet integré en mousseline
                     Prix12,99 €</p>
             </div>
-        </div>
+        </div> -->
 
         <div class="tenue">
-            <div>
-                <img src="https://lamis-boutique.fr/10850-home_default/hijab-a-enfiler-en-jersey-premium-lycra-2-metres.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/10850-home_default/hijab-a-enfiler-en-jersey-premium-lycra-2-metres.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Hijab à enfiler en jersey Premium Lycra 2 mètres
-                    Prix16,99 €</p>
+                    Prix <span id="prix-unitaire4">16,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity4" type="number" min="0">
+                        <button id="aime4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
-            <div>
-                <img src="https://lamis-boutique.fr/8358-home_default/hijab-jersey-coton-qualite-superieure-.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/8358-home_default/hijab-jersey-coton-qualite-superieure-.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Hijab jersey coton qualité supèrieure
-                    Prix8,99 €</p>
+                    Prix <span id="prix-unitaire5">8,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity5" type="number" min="0">
+                        <button id="aime5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
-            <div>
-                <img src="https://lamis-boutique.fr/8464-home_default/hijab-crepe-plisse-satine.jpg" alt="" width="400px">
+            <div style="display: block;">
+                <img src="https://lamis-boutique.fr/8464-home_default/hijab-crepe-plisse-satine.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Hijab crêpe plissé satiné
-                    Prix14,99 €</p>
+                    Prix <span id="prix-unitaire6">14,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity6" type="number" min="0">
+                        <button id="aime6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
         </div>
 

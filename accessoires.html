@@ -6,9 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="projet.css">
     <link rel="stylesheet" href="box.css">
+    <link rel="stylesheet" href="bouton.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+<script src="projet.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,6 +24,7 @@
                 <li><a href="accessoires.html">Accesssoires</a></li>
                 <li><a href="ensemble.html">Tenue de Priére</a></li>
                 <li><a href="box.html">Lamis Box</a></li>
+                <li><a href="#"><button style="background-color: palevioletred; border-radius: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button></a></li>
             </ul>
            
                 
@@ -36,55 +39,111 @@
         </div>
         <div class="tenue">
             <div>
-                <img src="https://lamis-boutique.fr/6658-large_default/epingle-pour-hijab-40-pieces-noir.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/6658-large_default/epingle-pour-hijab-40-pieces-noir.jpg" alt="" width="400px;" style="border-radius: 20px;">
                 <p class="box1">Epingle en panel pour hijab 40 piéces noir
-                    Prix1,00 €</p>
+                    Prix <span id="prix-unitaire16">1,00 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity16" type="number" min="0">
+                        <button id="aime16"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier16"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
+                   
+                    
             </div>
             <div>
-                <img src="https://lamis-boutique.fr/6660-large_default/epingle-pour-hijab-40-pieces-noir.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/6660-large_default/epingle-pour-hijab-40-pieces-noir.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Épingle en panel pour hijab 40 pièces colorées
-                    Prix1,00 €</p>
+                    Prix <span id="prix-unitaire17">1,00 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity17" type="number" min="0">
+                        <button  id="aime17"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button  id="ajout-panier17"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
             <div>
-                <img src="https://lamis-boutique.fr/4473-large_default/boite-epingles-pour-hijab.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/4473-large_default/boite-epingles-pour-hijab.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Boite épingles pour hijab
-                    Prix habituel6,99 € Prix4,99 €</p>
+                    Prix habituel 6,99 € Prix<span id="prix-unitaire18">4,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity18" type="number" min="0">
+                        <button  id="aime18"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button  id="ajout-panier18"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
         </div>
 
         <div class="tenue">
             <div style="display: block;">
-                <img src="https://lamis-boutique.fr/6234-home_default/lot-d-attaches-hijab-magnetique-double-puissance.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/6234-home_default/lot-d-attaches-hijab-magnetique-double-puissance.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Lot de 3 attaches hijab magnétiques double <br/> puissance
-                    Prix habituel9,99 € Prix7,99 €</p>
+                    Prix habituel 9,99 € Prix <span id="prix-unitaire19">7,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity19" type="number" min="0">
+                        <button  id="aime19"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button  id="ajout-panier19"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
             <div style="display: block;">
-                <img src="https://lamis-boutique.fr/10775-home_default/lot-4-attaches-hijab-turque.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/10775-home_default/lot-4-attaches-hijab-turque.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Attache Hijab Magnétique Double puissance
-                    Prix3,99 €</p>
+                    Prix <span id="prix-unitaire20">3,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity20" type="number" min="0">
+                        <button  id="aime20"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button  id="ajout-panier20"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
             <div style="display: block;" >
-                <img src="https://lamis-boutique.fr/6229-large_default/volumateur-hijab-en-mousseline-de-soie.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/6229-large_default/volumateur-hijab-en-mousseline-de-soie.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Chouchou Volumateur Hijab en mousseline de soie
-                    Prix8,99 €</p>
+                    Prix <span id="prix-unitaire21">8,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity21" type="number" min="0">
+                        <button  id="aime21"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button  id="ajout-panier21"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
         </div>
 
         <div class="tenue">
             <div>
-                <img src="https://lamis-boutique.fr/7367-home_default/manchette-longue-noir.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/7367-home_default/manchette-longue-noir.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Manchettes longue
-                    Prix3,99 €</p>
+                    Prix <span id="prix-unitaire22">3,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity22" type="number" min="0">
+                        <button  id="aime22"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button  id="ajout-panier22"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
             <div>
-                <img src="https://lamis-boutique.fr/10313-home_default/faux-col-noir.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/10313-home_default/faux-col-noir.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Faux col - cache cou
-                    Prix5,99 €</p>
+                    Prix <span id="prix-unitaire23">5,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity23" type="number" min="0">
+                        <button  id="aime23"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button  id="ajout-panier23"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
             <div>
-                <img src="https://lamis-boutique.fr/6635-home_default/lot-4-attaches-hijab-turque.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/6635-home_default/lot-4-attaches-hijab-turque.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Lot 4 attaches hijab anti trou
-                    Prix habituel4,99 € Prix2,99 €</p>
+                    Prix habitue l4,99 € Prix <span id="prix-unitaire24">2,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity24" type="number" min="0">
+                        <button  id="aime24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button  id="ajout-panier24"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
         </div>
     </main>

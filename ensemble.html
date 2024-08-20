@@ -6,9 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="projet.css">
     <link rel="stylesheet" href="box.css">
+    <link rel="stylesheet" href="bouton.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+<script src="projet.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,6 +24,7 @@
                 <li><a href="accessoires.html">Accesssoires</a></li>
                 <li><a href="ensemble.html">Tenue de Priére</a></li>
                 <li><a href="box.html">Lamis Box</a></li>
+                <li><a href="#"><button style="background-color: palevioletred; border-radius: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button></a></li>
             </ul>
            
                 
@@ -37,55 +40,109 @@
 
         <div class="tenue">
             <div>
-                <img src="https://lamis-boutique.fr/7882-large_default/ensemble-de-priere-mere-fille-bleu.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/7882-large_default/ensemble-de-priere-mere-fille-bleu.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Ensemble de prière mère fille bleu
-                    Prix habituel29,99 € Prix23,99 €</p>
+                    Prix habituel 29,99 € Prix <span id="prix-unitaire25">23,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity25" type="number" min="0">
+                        <button id="aime25"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier25"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
             <div>
-                <img src="https://lamis-boutique.fr/9264-home_default/ensemble-de-priere-uni-bleu-nuit.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/9264-home_default/ensemble-de-priere-uni-bleu-nuit.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Ensemble de prière satin uni Bleu Nuit
-                    Prix habituel49,99 € Prix34,99 €</p>
+                    Prix habituel49,99 € Prix <span id="prix-unitaire26">34,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity26" type="number" min="0">
+                        <button id="aime26"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier26"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
             <div>
-                <img src="https://lamis-boutique.fr/9196-home_default/ensemble-de-priere-prada-beige.jpg" alt="" width="400px" >
+                <img src="https://lamis-boutique.fr/9196-home_default/ensemble-de-priere-prada-beige.jpg" alt="" width="400px"  style="border-radius: 20px;">
                 <p class="box1">Ensemble de prière Prada Taupe
-                    Prix39,99 €</p>
+                    Prix <span  id="prix-unitaire27">39,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity27"  type="number" min="0">
+                        <button id="aime27"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier27"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
         </div>
 
         <div class="tenue">
             <div>
-                <img src="https://lamis-boutique.fr/9225-home_default/ensemble-de-priere-uni-noir.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/9225-home_default/ensemble-de-priere-uni-noir.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Ensemble de prière satin uni Noir
-                    Prix habituel49,99 € Prix34,99 €</p>
+                    Prix habituel 49,99 € Prix <span id="prix-unitaire28">34,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity28" type="number" min="0">
+                        <button id="aime28"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier28"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
             <div>
-                <img src="https://lamis-boutique.fr/8017-home_default/ensemble-de-priere-fleuri-vert-en-satin.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/8017-home_default/ensemble-de-priere-fleuri-vert-en-satin.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Ensemble de prière fleuri vert en satin
-                    Prix habituel49,99 € Prix34,99 €</p>
+                    Prix habituel 49,99€ Prix <span id="prix-unitaire29">34,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity29"  type="number" min="0">
+                        <button id="aime29"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier29"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
             <div>
-                <img src="https://lamis-boutique.fr/8049-home_default/ensemble-de-priere-blanc-corail-en-satin.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/8049-home_default/ensemble-de-priere-blanc-corail-en-satin.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Ensemble de prière blanc corail en satin
-                    Prix habituel49,99 € Prix34,99 €</p>
+                    Prix habituel 49,99€ Prix <span id="prix-unitaire30">34,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity30"  type="number" min="0">
+                        <button id="aime30"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier30"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
         </div>
 
         <div class="tenue">
             <div>
-                <img src="https://lamis-boutique.fr/9220-home_default/ensemble-de-priere-fleuri-nude-en-satin.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/9220-home_default/ensemble-de-priere-fleuri-nude-en-satin.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Ensemble de prière satin uni Vert
-                    Prix habituel49,99 € Prix34,99 €</p>
+                    Prix habituel 49,99 € Prix <span id="prix-unitaire31">34,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity31"  type="number" min="0">
+                        <button id="aime31"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier31"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
             <div>
-                <img src="https://lamis-boutique.fr/7895-large_default/ensemble-de-priere-mere-fille-rose-.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/7895-large_default/ensemble-de-priere-mere-fille-rose-.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Ensemble de prière mère fille rose
-                    Prix habituel29,99 € Prix23,99 €</p>
+                    Prix habituel29,99 € Prix <span id="prix-unitaire32">23,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input  id="quantity32" type="number" min="0">
+                        <button id="aime32"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier32"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
             <div>
-                <img src="https://lamis-boutique.fr/7870-home_default/ensemble-de-priere-mere-fille-beige.jpg" alt="" width="400px">
+                <img src="https://lamis-boutique.fr/7870-home_default/ensemble-de-priere-mere-fille-beige.jpg" alt="" width="400px" style="border-radius: 20px;">
                 <p class="box1">Ensemble de prière mère fille beige
-                    Prix29,99 €</p>
+                    Prix <span id="prix-unitaire33">29,99 €</span></p>
+                    <div class="nombre">
+                        <p>QUANTITE </p>
+                        <input id="quantity33"  type="number" min="0">
+                        <button id="aime33"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+                        <button id="ajout-panier33"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></button>
+                    </div>
             </div>
         </div>
 

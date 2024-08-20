@@ -19,7 +19,7 @@ nav img{
 }
 nav ul{
     display: flex;
-    margin-left: 400px;
+    margin-left: 300px;
     
 }
 nav ul li{
@@ -45,6 +45,7 @@ nav ul li a:hover{
     font-size: 70px;
     font-style: normal; 
     font-weight: 900;
+    color: palevioletred
 
 }
 .para1 p{
@@ -52,7 +53,7 @@ nav ul li a:hover{
     font-weight: 900;
     font-family: "Pinyon Script", cursive;
     border-radius: 50px;
-   color: palevioletred;
+   color: black;
     border-style:outset;
 }
 /* .sect1{
@@ -114,4 +115,25 @@ footer .foot1 div ul li a{
 .tiktok a:hover{
     color: palevioletred
 
+}
+.slide{
+    justify-content: center;
+    background-color:palevioletred ;
+    border-radius: 20px;
+}
+.mySlides h1{
+    justify-content: center;
+    margin-left: 500px;
+
+}
+.mySlides p{
+    justify-content: center;
+    margin-left: 500px;
+
+}
+span{
+    font-weight: bolder;
+    margin: 15px;
+    background-color:palevioletred ;
+    font-size: 25px;
 }

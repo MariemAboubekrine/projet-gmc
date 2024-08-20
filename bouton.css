@@ -1,0 +1,34 @@
+.nombre{
+    display: flex;
+    
+}
+.nombre p{
+    color:black;
+    font-weight: bolder;
+}
+.nombre input{
+    margin:8px;
+    height: 30px;
+    width: 60px;
+    border-radius: 30px;
+    background-color:palevioletred;
+   
+
+}
+.nombre button{
+    margin:8px;
+    height: 30px;
+    width: 60px;
+    border-radius: 30px;
+    background-color:palevioletred
+}
+.panier{
+    justify-items: center;
+
+}
+.panier button{
+    background-color:palevioletred;
+    color:black;
+    
+}
+

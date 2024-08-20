@@ -34,8 +34,13 @@
     text-decoration: none;
 }
 .box1{
-    display: block ;
-    margin: 20px ;  
+    /* display: block ; */
+    /* margin: 20px ;   */
+    justify-items: center;
+    margin: 0px;
+}
+.box1 p{
+    margin: 20px;
 }
 .box a:hover{
     color:palevioletred;
@@ -53,8 +58,8 @@
 .tenue div{
     margin: 15px;
   }
-  .sous{
+  /* .sous{
     display: block;
     margin: 100px;
   }
-  
+   */
